@@ -1,0 +1,171 @@
+@font-face {
+    font-family: MinecraftiaRegular;
+    src: url("./assets/Minecraftia.ttf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+#game{
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+#board-div{
+    width: 90vw;
+    height: 60vh;
+}
+#loading-screen{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #363541;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: ghostwhite;
+    font-size: 30px;
+    background-image: url("./assets/dance.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+#loading-screen p{
+    position: absolute;
+    margin-top: 65vh;
+}
+#end-first{
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url("./assets/amogus.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+#points-counter{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0.9;
+    background-color: black;
+    border-bottom-left-radius:10px;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#points{
+    font-size: 30px;
+}
+#question-container{
+    bottom: 5vh;
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./assets/grass.png");
+
+}
+#question-div{
+    width: 58vw;
+    height: 12vh;
+    color: ghostwhite;
+    font-size: medium;
+    background-image: url("./assets/mc_background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#question{
+    padding: 50px;
+}
+#map-line{
+    position: absolute;
+    height: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#line{
+    background-color: ghostwhite;
+    border: 3px solid black;
+    height: 10px;
+    width: 40vw;
+    border-radius: 25px;
+}
+#player-icon{
+    /* 0 - 37 */
+    position: absolute;
+    margin-left: 0vw;
+    transform: translateY(-10px);
+    background-image: url("./assets/amogus_pink.png");
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+#answers-div{
+    bottom: 5vh;
+    width: 60vw;
+    margin-top: 10px;
+    height: 17vh;
+    color: ghostwhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+.answer{
+    height: 7vh;
+    width: 29vw;
+    margin-top: 5px;
+    background-image: url("./assets/button.png");
+    background-size: cover;
+    border-bottom: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
