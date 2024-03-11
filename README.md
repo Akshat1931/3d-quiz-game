@@ -9,7 +9,7 @@ Use npm installation command
 ```
 npm install
 ```
-
+Fajny kod
 # Running app
 To to run game use
 ```
